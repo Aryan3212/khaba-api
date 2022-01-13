@@ -1,13 +1,13 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const apiRouter = require('./server/routes/router');
-const cors = require('cors')
-require('./server/models/db');
+const express = require("express");
+const bodyParser = require("body-parser");
+const apiRouter = require("./server/routes/router");
+const cors = require("cors");
+require("./server/models/db");
 
-let allowedOrigins = ['http://localhost:3000']
+let allowedOrigins = ["http://localhost:3000","http://affectionate-easley-0d9aa3.netlify.app/"];
 const app = express();
-const port = "80"
-const mongoose = require('mongoose');
+const port = process.env.PORT || "80";
+const mongoose = require("mongoose");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -22,10 +22,10 @@ app.use(
 //require('dotenv').config();
 
 //routing
-app.use('/', apiRouter);
+app.use("/", apiRouter);
 
 app.listen(port, () => {
-    console.log('API listening on port ' + port);
+    console.log("API listening on port " + port);
 });
 
-module.exports = app
+module.exports = app;
