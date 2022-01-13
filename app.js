@@ -6,7 +6,7 @@ require('./server/models/db');
 
 let allowedOrigins = ['http://localhost:3000']
 const app = express();
-const port = "4200"
+const port = "80"
 const mongoose = require('mongoose');
 
 app.use(bodyParser.json());
