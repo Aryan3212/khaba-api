@@ -6,7 +6,7 @@ require("./server/models/db");
 
 let allowedOrigins = [
     "http://localhost:3000",
-    "https://affectionate-easley-0d9aa3.netlify.app",
+    "https://khaba.netlify.app",
 ];
 const app = express();
 const port = process.env.PORT || "80";
