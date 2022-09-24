@@ -15,4 +15,4 @@ How to run:
 
 Frontend repo: https://github.com/Aryan3212/khaba-client
 
-Here's a video: https://www.youtube.com/watch?v=R7ObfmGv-eo&ab_channel=AryanRahman
+Here's a demo: https://www.youtube.com/watch?v=R7ObfmGv-eo&ab_channel=AryanRahman
